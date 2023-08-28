@@ -1,15 +1,15 @@
 These SQL queries are designed to retrieve and analyze data from a database table named `covid_data.coviddeaths`. This table likely contains information about COVID-19 cases, deaths, and related statistics. Let's go through each query step by step to understand what it does:
 
-1. **Retrieve Total Number of Cases for Each Location**
+1. **Retrieve the Total Number of Cases for Each Location**
    - This query counts the number of records (cases) for each unique location in the dataset and limits the result to the top 15 locations with the most cases.
 
-2. **Calculate Average Number of New Cases per Day for Each Continent**
+2. **Calculate the Average Number of New Cases per Day for Each Continent**
    - This query calculates the average number of new cases per day for each continent by grouping records by continent and using the `AVG` function to calculate the average of the `new_cases` column.
 
 3. **Find Dates with the Highest Number of Total Deaths Globally**
    - This query retrieves the dates with the highest number of total deaths globally by comparing the `total_deaths` column with the maximum value of `total_deaths` in the entire dataset. It limits the result to the top 3 dates.
 
-4. **Calculate Total Number of Cases per Million People for a Specific Date and Continent**
+4. **Calculate the Total Number of Cases per Million People for a Specific Date and Continent**
    - This query calculates the total number of cases per million people for a specific date and continent. It uses the `population` column to normalize the `total_cases` column.
 
 5. **Determine the Average Reproduction Rate for Each Continent**
